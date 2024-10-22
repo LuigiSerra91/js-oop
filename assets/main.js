@@ -65,3 +65,12 @@ Istanziamo una nuova Automobile (Opel, 2020, nera, con 4 porte, a benzina)
 Stampiamo il numero di porte e il tipo di carburante.
 
 */
+
+const automobile = new Veicolo('Opel', 2020, 'black', 4, 'benzina')
+
+console.log(automobile);
+
+console.log(automobile.porte);
+console.log(automobile.carburante);
+
+
