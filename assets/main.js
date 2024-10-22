@@ -17,6 +17,7 @@ Calcoliamo l'età della vettura utilizzando il metodo calcolaEta()
 */
 
 // creo la classe cars
+
 class Cars {
     marca;
     anno;
@@ -24,19 +25,25 @@ class Cars {
     porte;
     carburante;
 
-    constructor(marca, anno, colore, porte, carburante){
+    constructor(marca, anno, colore, porte, carburante,){
 
         this.marca = marca
         this.anno = anno
         this.colore = colore
         this.porte = porte
         this.carburante = carburante
-
+        
     }
 
     getInformation(){
         return `${this.marca} ${this.anno} ${this.colore} ${this.porte} porte ${this.carburante}`
     }
+    getCalcEta(){
+        const date = new Date() 
+         
+        return  date.getFullYear() - this.anno
+    }
+    
 }
 
 const punto = new Cars('Fiat', 2019, 'blue', 5, 'benzina')
@@ -44,3 +51,8 @@ const punto = new Cars('Fiat', 2019, 'blue', 5, 'benzina')
 console.log(punto);
 
 console.log(punto.getInformation());
+
+
+console.log(punto.getCalcEta());
+
+
