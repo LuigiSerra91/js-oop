@@ -34,10 +34,11 @@ class Cars {
         this.carburante = carburante
         
     }
-
+     //creo il metodo informazioni
     getInformation(){
         return `${this.marca} ${this.anno} ${this.colore} ${this.porte} porte ${this.carburante}`
     }
+    //creo il metodo calcEta
     getCalcEta(){
         const date = new Date() 
          
