@@ -35,6 +35,6 @@ class Cars {
     }
 }
 
-const punto = new Cars('Fiat', 1999, 'grey', 5, 'benzina')
+const punto = new Cars('Fiat', 2019, 'blue', 5, 'benzina')
 
 console.log(punto);
