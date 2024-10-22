@@ -33,8 +33,14 @@ class Cars {
         this.carburante = carburante
 
     }
+
+    getInformation(){
+        return `${this.marca} ${this.anno} ${this.colore} ${this.porte} porte ${this.carburante}`
+    }
 }
 
 const punto = new Cars('Fiat', 2019, 'blue', 5, 'benzina')
 
 console.log(punto);
+
+console.log(punto.getInformation());
