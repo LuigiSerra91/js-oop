@@ -18,7 +18,7 @@ Calcoliamo l'età della vettura utilizzando il metodo calcolaEta()
 
 // creo la classe cars
 
-class Cars {
+class Veicolo {
     marca;
     anno;
     colore;
@@ -47,7 +47,7 @@ class Cars {
     
 }
 
-const punto = new Cars('Fiat', 2019, 'blue', 5, 'benzina')
+const punto = new Veicolo('Fiat', 2019, 'blue', 5, 'benzina')
 
 console.log(punto);
 
@@ -57,3 +57,11 @@ console.log(punto.getInformation());
 console.log(punto.getCalcEta());
 
 
+/* 
+BONUS
+In questo bonus, dovrai estendere la classe "Veicolo" con una nuova classe chiamata "Automobile". La classe "Automobile" eredita tutte le proprietà e i metodi della classe "Veicolo" e ne aggiunge alcuni specifici per le automobili.
+Successivamente:
+Istanziamo una nuova Automobile (Opel, 2020, nera, con 4 porte, a benzina)
+Stampiamo il numero di porte e il tipo di carburante.
+
+*/
