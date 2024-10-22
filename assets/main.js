@@ -16,7 +16,7 @@ Calcoliamo l'età della vettura utilizzando il metodo calcolaEta()
 
 */
 
-
+// creo la classe cars
 class Cars {
     marca;
     anno;
@@ -34,3 +34,7 @@ class Cars {
 
     }
 }
+
+const punto = new Cars('Fiat', 1999, 'grey', 5, 'benzina')
+
+console.log(punto);
